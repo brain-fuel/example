@@ -57,14 +57,17 @@ class Program
 		var example = new Example(1, "hi there");
 		Console.WriteLine("example.Count is " + example.Count);
 		Console.WriteLine("example.Words is " + example.Words);
+		
 		Console.WriteLine();
-		
+
+		Console.WriteLine("Transmogrifying example");
 		ExampleTransmogrifier et = new ExampleTransmogrifier();
-		
 		et.IncrementCount(example);
 		et.AppendToString(example, ", my name is tinkerbell");
-		
+
 		Console.WriteLine();
+		
+		Console.WriteLine("Example after passing through the ExampleTransmogrifier");
 
 		Console.WriteLine("example.Count is " + example.Count);
 		Console.WriteLine("example.Words is " + example.Words);
