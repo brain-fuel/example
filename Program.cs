@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 class Example
 {
-	private int _count {get; set;}
+	private int _count = 0;
 	public int Count
 	{
 		get
@@ -14,7 +14,7 @@ class Example
 		}
 	}
 
-	private string _words {get; set;}
+	private string _words = "";
 	public string Words
 	{
 		get
